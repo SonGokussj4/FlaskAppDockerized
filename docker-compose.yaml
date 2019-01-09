@@ -1,0 +1,15 @@
+version: '2.1'
+services:
+
+  app:
+    #build:
+    #  context: .
+    #  dockerfile: Dockerfile
+    restart: always
+    image: mysuperduper:jedna
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app
+

@@ -1,0 +1,14 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="container">
+  <div class="col-md-8 col-md-offset-2 well well-lg">
+    <h3>Wellcome to Something on port 5000, should be http://tacticus/something</h3>
+    <p>Paragraph <b>in bold</b> <em>(And cursive)</em></p>
+    <p>url_for: {{ url_for('static', filename='css/bootstrap.min.css') }}</p>
+    <p>url_for _external: {{ url_for('static', filename='css/bootstrap.min.css', _external=True) }}</p>
+  </div>
+</div>
+
+{% endblock %}
